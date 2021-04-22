@@ -27,15 +27,15 @@ const app = new Vue({
     methods: {
         addTodo(){
      //   console.log("Add new item here");
-     if(this.newTodo !== "") {
-         this.newtodos.push({
-             text: this.newTodo,
-             completed: false,
-         });
+            if(this.newTodo !== "") {
+                this.todos.push({
+                    text: this.newTodo,
+                    completed: false,
+                });
 
-         this.newTodo = "",
-         this.$refs.todoInput.focus();
-     }
+                this.newTodo = "",
+                this.$refs.todoInput.focus();
+            }
         },
 
         // Remove the to-do item from the list 
@@ -43,8 +43,12 @@ const app = new Vue({
         removeTodo(index){
             this.todos.splice(index, 1);
 
-            const deleted = this.todos. splice(index, 1)[0];
-            console.log(deleted);
+       //     const deleted = this.todos. splice(index, 1)[0];
+        //    console.log(deleted);
+        },
+
+        updateStatus(index){
+            this.todos[index].completed = ! this.todos[index].completed
         }
     }
 
