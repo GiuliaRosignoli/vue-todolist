@@ -1,5 +1,8 @@
 console.log("Vue: ", Vue);
 
+// Intro message
+const todoIntro = alert("Create your to-do list and actually get things done! Are you ready?")
+
 const app = new Vue({
     el: "#app",
     data: {
