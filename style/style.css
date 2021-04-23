@@ -59,11 +59,20 @@ p {
     cursor: pointer;
 }
 
+/* Hover */
+.new-todo button:hover {
+    transform: scale(1.2); 
+}
+
 .new-todo input {
     flex-grow: 1;
     margin-right: 20px;
     margin-top: 6px;
     border: 1px solid #ccc;
+}
+
+.todos-container ul .todo {
+    cursor: pointer;
 }
 
 .todos-container {
