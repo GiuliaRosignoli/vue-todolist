@@ -44,7 +44,7 @@ p {
 
 .new-todo input {
     height: 35px;
-    padding: 5px;
+    padding: 20px;
     border: 0;
     background: rgb(173, 212, 186);
     outline: none;
@@ -53,16 +53,16 @@ p {
 
 .new-todo button {
     padding: 10px;
+    background: #32CD32;
     border-radius: 50%;
-    border-color: rgb(67, 18, 82);
-    background-color: blueviolet;
-    color:#191970;
+    border: 3px solid #191970; 
     cursor: pointer;
 }
 
 .new-todo input {
     flex-grow: 1;
     margin-right: 20px;
+    margin-top: 6px;
     border: 1px solid #ccc;
 }
 

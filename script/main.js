@@ -14,7 +14,7 @@ const app = new Vue({
             },
             {
                 text: "Walking the dog",
-                completed: true,
+                completed: false,
             },
             {
                 text: "Reading the book",
